@@ -4,6 +4,7 @@ system('taskkill /f /im AcroRd32.exe')
 
 library(tidyr)
 library(data.table)
+library(dplyr)
 
 
 # read user, tag, posttype triples covering all background posts
