@@ -11,8 +11,15 @@ The files in the queries folder start with a numerical code to indicate the orde
 ### Canonical
 The question selection based on duplicates of canonical question centers around two SQL files.
 
-The first file lists the canonical question ordered by the number of associated duplicate questions. The duplicate questions are selected in the second file.  The pre-review Excel sheets are provided in the subfolder 'pre-review sheets'.
+The first file lists the canonical question ordered by the number of associated duplicate questions. The duplicate questions are selected in the second file.  
+
+The pre-review Excel sheets are provided in the subfolder 'pre-review sheets'.
+
 ### Keyword
+
+The keyword selection starts with SQL files 1a and 1b which prepare temporary tables indicating for each SQL question how many comments the asker left on the answers to their question and on their own question, respectively. The second SQL file contains the queries which extract the questions for pre-review.
+
+The pre-review Excel sheets are provided in the subfolder 'pre-review sheets'.
 
 ## Data Analysis
 
