@@ -1,6 +1,5 @@
 sourceDir <- getSrcDirectory(function(dummy) {dummy})
 setwd(sourceDir)
-system('taskkill /f /im AcroRd32.exe')
 
 library(tidyr)
 library(data.table)
@@ -8,7 +7,7 @@ library(dplyr)
 
 
 # read user, tag, posttype triples covering all background posts
-post_background<-fread('user_background.csv', col.names = c("UserId", "tag", "postType"))
+post_background<-fread('4a_output_user_background.csv', col.names = c("UserId", "tag", "postType"))
 
 # count user involvement in each tag disregarding posttype
 tag_frequency<- post_background %>% filter(UserId != 0) %>% select(-postType) %>% group_by(UserId, tag) %>% tally()
