@@ -1,5 +1,6 @@
 -- 3a create views
 -- strict tag-based filtered SQL questions in 8 month new user period
+-- the table 'SQLquestions' was created by filtering by tags in 1_add_sql_to_table.sql
 Create or alter view [FilteredSQLquestionsUsersNewToSQL] as 
 select * from SQLquestions 
 left join SQLcutoffUsers on SQLquestions.OwnerUserId = SQLcutoffUsers.UserId
