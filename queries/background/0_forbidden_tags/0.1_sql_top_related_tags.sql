@@ -1,4 +1,4 @@
--- 1a explore tags on 
+-- 0.1 get top 500 tags on SQL-tagged Stack Overflow questions 
 -- adapted from https://meta.stackexchange.com/a/293208
 With SQLtaggedQuestions as
 (select * from Posts where Tags like '%<sql>%'),
